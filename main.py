@@ -13,13 +13,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-consumer_key = 'ReamiuPpfGUeLWdVgAFBcOiAy'
+consumer_key = 'consumer_key'
 
-consumer_secret = 'SBG0IsoimcMcWU9ba59J2L1mN3DUwWhKWnTX9naiZJPiWo5P1N'
+consumer_secret = 'consumer_secret'
 
-access_token = '1539834620639956992-qzET7o3aTHrC6qWrriey0iiq7Nb9Lp'
+access_token = 'access_token'
 
-access_token_secret = 'nbTtjYaTn21aceZV009SGCToPGHiFejwcqW1AvXllIYtN'
+access_token_secret = 'access_token_secret'
 def OAuth():
     try:
         auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -58,7 +58,7 @@ def Streamers():
     url = "https://www.twitch.tv/directory/all?sort=VIEWER_COUNT"
     options = Options()
     options.headless = True
-    s = Service('/Users/isaac/Documents/drivers/chromedriver')
+    s = Service('Where chromedrive is')
     driver = webdriver.Chrome(service=s, options = options)
     driver.get(url)
     size = 0
